@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Calculadora de desconto</title>
 </head>
 <body>
   
-<h1>Calculadora de Descontos</h1>
+<h1 id="title">Calculadora de Descontos</h1>
 
-<section>
+<section id="content">
 
   <div id="Section_preco">
     <!-- Adicionar script em JavaScript que volte para
@@ -19,12 +20,27 @@
     <input id="Valor_pre" type="text" value="Insira o preço " onfocus="this.value= ''">
   </div>
 
+  <!-- Usado para quebrar as linhas entre divs -->
+  <!-- <hr> -->
+
   <div id="Section_desconto">
     <label for="Valor_des">Porcentagem de desconto:&nbsp;</label>
     <input id="Valor_des" type="text" value="Insira o desconto " onfocus="this.value= ''">
   </div>
 
+  <!-- <div id="Div_resultado">
+
+  </div> -->
+
+  <div id="Submit_button">
+    <button type="button">Calcular valor original</button>
+  </div>
+
 </section>
+
+<footer>
+  Developed by <a href="">@neo.guiz</a>
+</footer>
 
 </body>
 </html>
