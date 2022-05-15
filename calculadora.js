@@ -31,7 +31,6 @@ function EliminaDivSobrando(Div_sobrando){
 
     if(Section.contains(Div_sobrando)){
         Div_sobrando.remove()
-        console.log("Div detectada")
     }
 
 }
@@ -41,13 +40,16 @@ function VerificaValorNulo(Valor_original){
     var Valor_pre = Input_pre.value
     var Valor_des = Input_desc.value
 
-    if((Valor_pre||Valor_des=="Insira o preço"||"Insira o desconto") || (Valor_original==0)){
-        console.log(Valor_pre)
-        console.log(Valor_des)
-        console.log(Valor_original)
-        return "Insira um valor válido"
+    // console.log(Valor_pre)
+    // console.log(Valor_des)
+    // console.log(Valor_original)
+
+    if((Valor_pre=="Insira o preço ") || (Valor_des=="Insira o desconto ") || (Valor_original==0)){
+        console.log("primeira condição")
+        return ("Insira um valor válido")
     } else {
-        return `O valor do preço antes da aplicação do desconto era de ${Valor_original}`
+        console.log("else")
+        return ("O valor do preço antes da aplicação do desconto era de R$ " + Valor_original.toFixed(2))
     }
 
 }
