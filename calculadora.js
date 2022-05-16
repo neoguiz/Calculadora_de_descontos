@@ -1,8 +1,11 @@
 
 var Section = document.getElementById('content')
 var Input_pre = document.getElementById('Valor_pre')
-var Input_desc = document.getElementById('Valor_des')
+var Input_des = document.getElementById('Valor_des')
 var Submit = document.getElementById('Submit_button')
+
+Input_pre.onfocus = ManterValor(Input_pre.value)
+Input_des.onfocus = ManterValor(Input_des.value)
 
 Submit.addEventListener('click', function(e){
 
@@ -10,7 +13,7 @@ Submit.addEventListener('click', function(e){
     EliminaDivSobrando(Div_sobrando)
 
     var Valor_pre = Input_pre.value
-    var Valor_des = Input_desc.value
+    var Valor_des = Input_des.value
 
     const Porc_total = 100
     var Porc_aplicada = 100 - Valor_des
@@ -39,7 +42,7 @@ function VerificaValorNulo(Valor_original){
     console.clear()
 
     var Valor_pre = Number(Input_pre.value)
-    var Valor_des = Number(Input_desc.value)
+    var Valor_des = Number(Input_des.value)
 
     // console.log("Valor com desconto: " + Valor_pre)
     // console.log("Porcentagem de desconto: " + Valor_des)
@@ -59,4 +62,8 @@ function VerificaValorNulo(Valor_original){
         return ("O valor do preço antes da aplicação do desconto era de R$ " + Valor_original.toFixed(2))
     }
 
+}
+
+function ManterValor(Valor_input){
+    this.innerHTML = Valor_input
 }
