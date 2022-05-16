@@ -4,8 +4,6 @@ body{
   color: white;
 }
 
-
-
 #title{
   font-family: 'Oxanium', cursive;
   font-weight: 200;
@@ -16,6 +14,7 @@ body{
 }
 
 #content {
+  background-color: #0E1115;
   position: static;
   margin: auto;
   border: 2px solid #ffffff;
@@ -27,12 +26,39 @@ body{
 } #content > div {
   margin-left: auto;
   margin-right: auto;
-  width: 220px;
+  width: 230px;
   padding: 8px;
   justify-content: space-between;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.9rem
+}
+
+.labels{
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+input{
+  margin-top: 5px;
+  padding: 6px 0;
+  background-color:#34D178;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-align: center;
+  border: 0;
+  border-radius: 4px;
+}
+
+#Submit_button{
+  margin-top: 10px;
+}
+
+#Div_resultado{
+  min-width: 300px;
 }
 
 footer{
@@ -43,8 +69,4 @@ footer{
   height: 70px;
   line-height: 60px;
   margin-left: 30px;
-}
-
-#Submit_button{
-  margin-top: 10px;
 }
