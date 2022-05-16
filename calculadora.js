@@ -55,7 +55,7 @@ function VerificaValorNulo(Valor_original){
     if(isNaN(Valor_pre) || isNaN(Valor_des)){
         console.log("Expected")
         return ("Insira um valor válido")
-    } else if((Valor_pre=="Insira o preço ") || (Valor_des=="Insira o desconto ") || (Valor_original==0)){
+    } else if((Valor_pre=="Insira o preço ") || (Valor_des=="Insira o desconto ") || (Valor_original<=0)){
         return ("Insira um valor válido")
     } else {
         console.log("else")
