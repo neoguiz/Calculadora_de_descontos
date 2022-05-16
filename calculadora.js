@@ -6,7 +6,6 @@ var Submit = document.getElementById('Submit_button')
 
 Submit.addEventListener('click', function(e){
 
-
     Div_sobrando = document.getElementById("Div_resultado")
     EliminaDivSobrando(Div_sobrando)
 
@@ -37,15 +36,23 @@ function EliminaDivSobrando(Div_sobrando){
 
 function VerificaValorNulo(Valor_original){
 
-    var Valor_pre = Input_pre.value
-    var Valor_des = Input_desc.value
+    console.clear()
 
-    // console.log(Valor_pre)
-    // console.log(Valor_des)
-    // console.log(Valor_original)
+    var Valor_pre = Number(Input_pre.value)
+    var Valor_des = Number(Input_desc.value)
 
-    if((Valor_pre=="Insira o preço ") || (Valor_des=="Insira o desconto ") || (Valor_original==0)){
-        console.log("primeira condição")
+    // console.log("Valor com desconto: " + Valor_pre)
+    // console.log("Porcentagem de desconto: " + Valor_des)
+    // console.log("Valor original: " + Valor_original)
+    // console.log("Tipo de valor pre: " + typeof Valor_pre)
+    // console.log("Tipo de valor des: " + typeof Valor_des)
+    // console.log(isNaN(Valor_pre))
+    // console.log(isNaN(Valor_des))
+
+    if(isNaN(Valor_pre) || isNaN(Valor_des)){
+        console.log("Expected")
+        return ("Insira um valor válido")
+    } else if((Valor_pre=="Insira o preço ") || (Valor_des=="Insira o desconto ") || (Valor_original==0)){
         return ("Insira um valor válido")
     } else {
         console.log("else")
