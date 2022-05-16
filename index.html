@@ -5,18 +5,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Importando fontes  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@200&family=Oxanium:wght@700&display=swap" rel="stylesheet">
+  <!-- Fim das importações -->
+
   <title>Calculadora de desconto</title>
 </head>
 <body>
   
-<h1 id="title">Calculadora de Descontos</h1>
+  <header>
+    <h1 id="title">Calculadora de Desconto</h1>
+  </header>
 
 <section id="content">
 
   <div id="Section_preco">
     <!-- Adicionar script em JavaScript que volte para
     o value do input caso o campo fique em branco -->
-    <label for="Valor_pre">Valor com desconto:&nbsp;</label>
+    <label for="Valor_pre" class="labels">Valor com desconto:&nbsp;</label>
+    <br>
     <input id="Valor_pre" type="text" value="Insira o preço " onfocus="this.value= ''">
   </div>
 
@@ -24,7 +34,8 @@
   <!-- <hr> -->
 
   <div id="Section_desconto">
-    <label for="Valor_des">Porcentagem de desconto:&nbsp;</label>
+    <label for="Valor_des" class="labels">Porcentagem de desconto:&nbsp;</label>
+    <br>
     <input id="Valor_des" type="text" value="Insira o desconto " onfocus="this.value= ''">
   </div>
 

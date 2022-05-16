@@ -1,5 +1,14 @@
 
+body{
+  background: #08080C;
+  color: white;
+}
+
+
+
 #title{
+  font-family: 'Oxanium', cursive;
+  font-weight: 200;
   margin:auto;
   margin-bottom: 30px;
   margin-top: 40px;
@@ -9,19 +18,21 @@
 #content {
   position: static;
   margin: auto;
-  border: 2px solid #000000;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
   width: fit-content;
+  min-width: 300px;
   padding: 20px;
   display: block;
 } #content > div {
   margin-left: auto;
   margin-right: auto;
-  width: fit-content;
+  width: 220px;
   padding: 8px;
   justify-content: space-between;
   text-align: center;
-} #content hr {
-  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem
 }
 
 footer{
