@@ -1,14 +1,14 @@
 
 body{
   background: #08080C;
-  color: white;
+  color: #f1f1f1;
 }
 
 #title{
   font-family: 'Oxanium', cursive;
   font-weight: 200;
   margin:auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-top: 40px;
   max-width: fit-content;
 }
@@ -17,7 +17,7 @@ body{
   background-color: #0E1115;
   position: static;
   margin: auto;
-  border: 2px solid #ffffff;
+  border: 2px solid #3A414C;
   border-radius: 8px;
   width: fit-content;
   min-width: 300px;
@@ -41,20 +41,24 @@ body{
 }
 
 input{
-  margin-top: 5px;
+  margin-top: 6px;
   padding: 6px 0;
   background-color:#34D178;
-  color: white;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 0.8rem;
   text-align: center;
   border: 0;
   border-radius: 4px;
+} ::placeholder{
+  color: #f1f1f1;
 }
 
 #Submit_button{
-  margin-top: 10px;
+  margin: 10px auto 2px;
+} #Submit_button > button{
+  width: 200px;
+  padding: 10px 0px;
 }
 
 #Div_resultado{
